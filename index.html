@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Q3_SW3</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f2f2f2; 
+            font-family: Arial, sans-serif; 
+            color: #333; 
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Open Sans', sans-serif;}
+        img {
+            max-height: 200px; 
+            width: auto; 
+            display: block; 
+            margin: 0 auto; 
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap; 
+            padding: 20px; 
+        }
+        .navbar {
+            padding: 0;
+            font-size: 24px; 
+            background-color: #343a40; 
+        }
+        .navbar-brand img {
+            height: 60px; 
+            width: auto; 
+        }
+        .navbar-nav .nav-link {
+            color: white !important; 
+        }
+        .search-container {
+            margin-left: auto; 
+        }
+        .searchinput {
+            cursor: text;
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        #searchsub {
+            cursor: pointer;
+            padding: 5px 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin-left: 5px;
+        }
+        .text-danger {
+            color: red; 
+        }
+        .card {
+            background-color: #fff;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
+            transition: 0.3s; 
+            margin-bottom: 20px; 
+            padding: 20px; 
+        }
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+     
+        .form-control {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        textarea {
+            resize: vertical;
+        }
+        .form-check {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md">
+        <a class="navbar-brand" href="#">
+            <img src="https://www.freepnglogos.com/uploads/logo-mobile-legend-png/logo-mobile-legend-tcash-apapun-operatornya-semua-bisa-paketcash-18.png">
+        </a>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Hero</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Leaderboards</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Items</a> 
+            </li>
+        </ul>
+        <div class="search-container">
+            <form>
+                <input type="search" placeholder="Search" name="search" class="searchinput">
+                <button type="submit" class="btn btn-success" id="searchsub">Submit</button>
+            </form>
+        </div>
+    </nav>
+    <center>
+        <h1 class="text-danger">Mobile Legends</h1>
+    </center>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <img class="rounded-circle" src="https://media.tenor.com/UZQmWvS7m3IAAAAM/layla-mlbb.gif">
+                    <p>Layla</p>
+                    <p>Malefic Gunner: Layla is a deadly marksman whose accuracy is matched only by her ambition. Armed with her Malefic Cannon, she rains down destruction upon her enemies from afar, making her a formidable force on the battlefield.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img class="rounded-circle" src="https://images2.alphacoders.com/133/1334360.jpeg">
+                    <p>Alucard</p>
+                    <p>Demon Hunter: Alucard is a brooding warrior who walks the line between light and darkness. With his cursed sword, he strikes fear into the hearts of his foes, draining their life force with every swing.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img class="rounded-circle" src="https://pa1.aminoapps.com/6946/b6c089f6a2d607d0a85afd6617d93494d4d74460r1-404-342_hq.gif">
+                    <p>Miya</p>
+                    <p>Moonlight Archer: Miya is a graceful archer whose arrows never miss their mark. Born under the light of the moon, she draws power from its glow to unleash devastating barrages of arrows upon her enemies.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img class="rounded-circle" src="https://static.wikia.nocookie.net/mobile-legends/images/7/76/Frozen_Warrior.jpg/revision/latest?cb=20211202052451">
+                    <p>Franco</p>
+                    <p>Frozen Warrior: Franco is a hulking warrior encased in ice, his frozen heart filled with rage. Armed with his mighty anchor, he pulls his enemies in close before crushing them with brute force.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <form class="form-group">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                </div>
+                <div class="col-md-6">
+                    <input type="password" class="form-control" placeholder="Enter password" name="password">
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-6">
+                    <textarea class="form-control" rows="5" id="comment" placeholder="Enter your comment here"></textarea>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="option1">
+                        <label class="form-check-label" for="option1">Option 1</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="optradio1" name="optradio">
+                        <label class="form-check-label" for="optradio1">Option 1</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
